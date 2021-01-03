@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!--    START OF TITLE STYLE    -->
+    <style name="TitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <!--    END OF TITLE STYLE  -->
+
+<!--    THIS IS THE START OF THE LABEL TV STYLE   -->
+    <style name="LabelStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginStart">36dp</item>
+    </style>
+<!--    THIS IS THE END OF THE LABEL TV STYLE -->
+
+
+<!--    THIS IS THE START OF THE VALUE ET STYLE -->
+    <style name="ValueStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginStart">76dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+<!--    THIS IS THE END OF THE VALUE ET STYLE-->
+
+
+<!--    THIS IS THE START OF THE LOAN TV STYLE     -->
+    <style name="LoanStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">335dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+<!--    THIS IS THE END OG THE LOAN TV STYLE        -->
+
+<!--    THIS IS THE START OF THE MONTH TITLE TV STYLE -->
+    <style name="MonthStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+<!--    THIS IS THE END OF THE MONTH TITLE TV STYLE-->
+
+    <!--    THIS IS THE START OF THE YEARS BUTTON STYLE-->
+    <style name="yearButtonStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+<!--    THIS IS THE END OF THE YEARS BUTTON STYLE-->
+</resources>

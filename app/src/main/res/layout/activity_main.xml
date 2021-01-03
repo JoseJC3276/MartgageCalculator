@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+    <!--    THIS CODE IS THE START OF THE TITLE VIEW TEXT VIEW   -->
+    <TextView
+        android:id="@+id/titleViewTV"
+        style="@style/TitleStyle"
+        android:text="@string/mortgage_calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--    THIS CODE IS THE END OF THE TITLE VIEW TEXT VIEW  -->
+
+<!--    THIS CODE IS FOR PURCHASE PRICE LABEL TEXT VIEW     -->
+    <TextView
+        android:id="@+id/PurchasePriceLabelTV"
+        style="@style/LabelStyle"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/purchase_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleViewTV" />
+<!--    THIS IS THE END OF THE PURCHASE PRICE LABEL TEXT VIEW   -->
+
+<!--    THIS IS THE START OF THE PURCHASE PRICE VALUE EDIT TEXT     -->
+    <EditText
+        android:id="@+id/PurchasePriceValueET"
+        style="@style/ValueStyle"
+        android:autofillHints=""
+        android:hint="@string/enter_amount"
+        app:layout_constraintStart_toEndOf="@+id/PurchasePriceLabelTV"
+        app:layout_constraintTop_toBottomOf="@+id/titleViewTV"
+        app:layout_constraintBaseline_toBaselineOf="@id/PurchasePriceLabelTV"/>
+    <!--    THIS IS THE START OF THE PURCHASE PRICE VALUE EDIT TEXT     -->
+
+    <TextView
+        android:id="@+id/DownPaymentLabelTV"
+        style="@style/LabelStyle"
+        android:layout_marginStart="36dp"
+        android:text="@string/down_payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PurchasePriceLabelTV" />
+
+    <EditText
+        android:id="@+id/DownPaymentValueET"
+        style="@style/ValueStyle"
+        android:autofillHints=""
+        android:hint="@string/enter_amount"
+        app:layout_constraintStart_toEndOf="@+id/DownPaymentLabelTV"
+        app:layout_constraintTop_toBottomOf="@+id/PurchasePriceValueET"
+        app:layout_constraintBaseline_toBaselineOf="@id/DownPaymentLabelTV"/>
+
+    <TextView
+        android:id="@+id/InterestRaterLabelTV"
+        style="@style/LabelStyle"
+        android:text="@string/interest_rate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DownPaymentLabelTV" />
+
+
+    <EditText
+        android:id="@+id/InterestRateValueET"
+        style="@style/ValueStyle"
+        android:autofillHints=""
+        android:hint="@string/enter_amount"
+        app:layout_constraintStart_toEndOf="@+id/InterestRaterLabelTV"
+        app:layout_constraintTop_toBottomOf="@+id/DownPaymentValueET"
+        app:layout_constraintBaseline_toBaselineOf="@id/InterestRaterLabelTV"/>
+
+    <Button
+        android:id="@+id/LoanAmountButton"
+        style="@style/LoanStyle"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/calculate_loan_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleViewTV" />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="@style/LoanStyle"
+        android:background="@drawable/rounded_button"
+        android:text="@string/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarNumberTV" />
+
+    <TextView
+        android:id="@+id/LoanLabelTV"
+        style="@style/LoanStyle"
+        android:hint="@string/enter_purchase_price_down_payment_interest_rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoanAmountButton" />
+
+    <TextView
+        android:id="@+id/MonthTitle"
+        style="@style/MonthStyle"
+        android:text="@string/monthly_payments_for"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoanLabelTV" />
+
+    <Button
+        android:id="@+id/tenYearsButton"
+        style="@style/yearButtonStyle"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/_10_years"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MonthTitle" />
+
+    <Button
+        android:id="@+id/twentyYearsButton"
+        style="@style/yearButtonStyle"
+        android:layout_marginTop="4dp"
+        android:text="@string/_20_years"
+        app:layout_constraintBaseline_toBaselineOf="@id/tenYearsButton"
+        app:layout_constraintEnd_toStartOf="@+id/thirtyYearsButton"
+        app:layout_constraintStart_toEndOf="@+id/tenYearsButton"
+        app:layout_constraintTop_toBottomOf="@+id/MonthTitle" />
+
+    <Button
+        android:id="@+id/thirtyYearsButton"
+        style="@style/yearButtonStyle"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/_30_years"
+        app:layout_constraintBaseline_toBaselineOf="@id/twentyYearsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MonthTitle" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/LoanStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twentyYearsButton"
+        android:max="50"
+        android:progress="25"/>
+
+    <TextView
+        android:id="@+id/seekBarNumberTV"
+        style="@style/LoanStyle"
+        android:text="@string/_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+
+    <!--    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+</androidx.constraintlayout.widget.ConstraintLayout>

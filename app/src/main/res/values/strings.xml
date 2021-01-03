@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MADFinalB</string>
+    <string name="mortgage_calculator">Mortgage Calculator</string>
+    <string name="purchase_price">Purchase Price:</string>
+    <string name="empty_hint" />
+    <string name="enter_amount">Enter Amount</string>
+    <string name="down_payment">Down Payment:</string>
+    <string name="interest_rate">Interest % Rate:</string>
+    <string name="enter_purchase_price_down_payment_interest_rate">ENTER PURCHASE PRICE, DOWN PAYMENT, INTEREST RATE BEFORE CALCULATING.</string>
+    <string name="calculate_loan_amount">Calculate Loan Amount</string>
+    <string name="monthly_payments_for">MONTHLY PAYMENTS FOR:</string>
+    <string name="_20_years">20 Years</string>
+    <string name="_30_years">30 Years</string>
+    <string name="_10_years">10 Years</string>
+    <string name="_25">25</string>
+    <string name="clear">CLEAR</string>
+</resources>
